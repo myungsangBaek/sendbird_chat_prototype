@@ -13,6 +13,7 @@ import {
 } from "../../const";
 
 function SendBird() {
+  console.log(ACCESS_TOKEN);
   return (
     <SendBirdApp
       appId={APP_ID}
