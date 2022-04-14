@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 import { App as SendBirdApp } from "sendbird-uikit";
 import "sendbird-uikit/dist/index.css";
@@ -11,9 +11,15 @@ import {
   ACCESS_TOKEN,
   PROFILE_URL,
 } from "../../const";
+import { USER_INFO } from "../../types";
+
+// interface IProps {
+//   user: USER_INFO[];
+// }
 
 function SendBird() {
   console.log(ACCESS_TOKEN);
+
   return (
     <SendBirdApp
       appId={APP_ID}
@@ -21,7 +27,6 @@ function SendBird() {
       userId={USER_ID}
       nickname={NICKNAME}
       profileUrl={PROFILE_URL}
-      theme={THEME}
       allowProfileEdit={true}
       showSearchIcon={true}
       useMessageGrouping={true}
