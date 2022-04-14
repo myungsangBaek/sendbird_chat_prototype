@@ -26,10 +26,6 @@ function Main() {
   //user 생성
   const postData = async () => {
     try {
-      const param = new URLSearchParams();
-      param.append("user_id", "bms1111");
-      param.append("nickname", "kakaka");
-      param.append("profile_url", PROFILE_URL);
       const data = await axios.post(
         `https://api-${APP_ID}.sendbird.com/v3/users`,
         {
