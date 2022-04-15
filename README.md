@@ -6,7 +6,7 @@ yarn start
 
 ### Reference
 
-(https://www.notion.so/dd1961d13f194f29ab88c021b1e77fd8?v=bf6469b1425d4a93bcce10a73bf03d1d)
+https://www.notion.so/dd1961d13f194f29ab88c021b1e77fd8?v=bf6469b1425d4a93bcce10a73bf03d1d
 
 ### Issue
 
