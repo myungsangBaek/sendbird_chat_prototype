@@ -11,4 +11,4 @@ jobs:
       - uses: myungsangBaek/action-dependabot-auto-merge@v2
         with:
           target: minor
-          github-token: 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
+          github-token: ${{ secret.GITHUB_TOKEN }}
