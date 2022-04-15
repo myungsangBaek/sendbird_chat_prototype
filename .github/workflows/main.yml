@@ -1,6 +1,6 @@
 name: CI
 
-on: 
+on:
   pull_request:
 
 jobs:
@@ -11,4 +11,4 @@ jobs:
       - uses: myungsangBaek/action-dependabot-auto-merge@v2
         with:
           target: minor
-          github-token: ${{ secret.GITHUB_TOKEN }}
+          github-token: ${{ secrets.GITHUB_TOKEN}}
