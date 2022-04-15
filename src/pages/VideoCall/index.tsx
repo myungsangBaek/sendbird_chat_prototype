@@ -1,11 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import * as SendBirdCall from "sendbird-calls";
+import VideoCallArea from "../../components/VideoCallArea";
 import { APP_ID } from "../../const";
 
 SendBirdCall.init(APP_ID);
 
 function VideoCall() {
+  const [inputs, setInputs] = useState([]);
+
   const connect = () => {};
+
   return (
     // <!-- Main Container -->
     <div className="container">
@@ -38,6 +42,9 @@ function VideoCall() {
           </button>
         </div>
       </div>
+      <VideoCallArea />
     </div>
   );
 }
+
+export default VideoCall;
