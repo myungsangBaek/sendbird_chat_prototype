@@ -1,15 +1,11 @@
-# Basic dependabot.yml file with
-# minimum configuration for two package managers
-
 version: 2
 updates:
-  # Enable version updates for npm
-  - package-ecosystem: 'npm'
-    directory: '/'
+  - package-ecosystem: npm
+    open-pull-requests-limit: 10
+    directory: /action
+    commit-message:
+      prefix: build
+      prefix-development: chore
+      include: scope
     schedule:
-      interval: 'daily'
-    # Specify labels for npm pull requests
-    labels:
-      - 'npm'
-      - 'dependencies'
-    versioning-strategy: increase
+      interval: daily
