@@ -6,7 +6,7 @@ yarn start
 
 ### Reference
 
-https://www.notion.so/dd1961d13f194f29ab88c021b1e77fd8?v=bf6469b1425d4a93bcce10a73bf03d1d
+https://www.notion.so/Sendbird-API-b013e65c46a04c51acc605a5245617e1
 
 ### Issue
 
