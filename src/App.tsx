@@ -6,6 +6,7 @@ import "./App.css";
 import Main from "./pages";
 import Login from "./pages/Login";
 import VideoCall from "./pages/VideoCall";
+import Test from "./pages/TestPage";
 
 // export interface IProps {
 //   id: string;
@@ -20,6 +21,7 @@ function App() {
           <Route path="/chat" element={<SendBird />} />
           <Route path="/login" element={<Login />} />
           <Route path="/video" element={<VideoCall />} />
+          <Route path="/test" element={<Test />} />
         </Routes>
       </BrowserRouter>
     </div>
