@@ -1,10 +1,14 @@
 import axios from "axios";
 import React, { useEffect } from "react";
 import { APP_ID, PROFILE_URL } from "../const";
+import "devextreme/dist/css/dx.light.css";
+import DataGrid from "devextreme-react/data-grid";
+import Button from "devextreme-react/button";
+import { customers } from "../types/data";
 
 function Main() {
   console.log(APP_ID);
-
+  const columns = ["CompanyName", "City", "State", "Phone", "Fax"];
   //user 조회
   const getUser = async () => {
     try {
@@ -46,12 +50,23 @@ function Main() {
     }
   };
 
+  const sayHelloWorld = () => {
+    alert("hello world");
+  };
+
   useEffect(() => {
     getUser();
   });
   return (
     <>
       <div onClick={postData}>Main Page</div>
+      <Button text="Click me" onClick={sayHelloWorld}></Button>
+      <DataGrid
+        dataSource={customers}
+        keyExpr="ID"
+        defaultColumns={columns}
+        showBorders={true}
+      />
     </>
   );
 }
