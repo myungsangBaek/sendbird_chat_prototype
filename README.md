@@ -1,3 +1,7 @@
+### Project
+Use sendbird api ui toolkit for chat
+
+
 ### Getting Started
 
 ```
